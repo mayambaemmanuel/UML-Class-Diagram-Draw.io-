@@ -1,0 +1,247 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="exact-screenshot-layout" name="Hospital Management System UML">
+    <mxGraphModel dx="2037" dy="1311" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="person" parent="1" style="swimlane;html=1;horizontal=1;startSize=38;fillColor=#E3EFF3;swimlaneFillColor=#E3EFF3;strokeColor=#274866;strokeWidth=2;fontColor=#243F5D;fontSize=18;fontStyle=1;" value="&lt;b&gt;&lt;i&gt;Person&lt;/i&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="165" width="420" x="900" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="personA" connectable="0" parent="person" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="- personId: String&lt;br&gt;- fullName: String&lt;br&gt;- phone: String" vertex="1">
+          <mxGeometry height="90" width="420" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="personM" connectable="0" parent="person" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="37" width="420" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="patient" parent="1" style="swimlane;html=1;horizontal=1;startSize=38;fillColor=#E3EFF3;swimlaneFillColor=#E3EFF3;strokeColor=#274866;strokeWidth=2;fontColor=#243F5D;fontSize=18;fontStyle=1;" value="&lt;b&gt;Patient&lt;/b&gt;" vertex="1">
+          <mxGeometry height="210" width="360" x="170" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="patientA" connectable="0" parent="patient" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="- dateOfBirth: Date&lt;br&gt;- contactAddress: String" vertex="1">
+          <mxGeometry height="70" width="360" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="patientM" connectable="0" parent="patient" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="+ register()&lt;br&gt;+ updateContact()" vertex="1">
+          <mxGeometry height="102" width="360" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="staff" parent="1" style="swimlane;html=1;horizontal=1;startSize=38;fillColor=#E3EFF3;swimlaneFillColor=#E3EFF3;strokeColor=#274866;strokeWidth=2;fontColor=#243F5D;fontSize=18;fontStyle=1;" value="&lt;b&gt;&lt;i&gt;Staff&lt;/i&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="210" width="360" x="680" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="staffA" connectable="0" parent="staff" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="- staffId: String&lt;br&gt;- role: String&lt;br&gt;- departmentId: String" vertex="1">
+          <mxGeometry height="95" width="360" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="staffM" connectable="0" parent="staff" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="77" width="360" y="133" as="geometry" />
+        </mxCell>
+        <mxCell id="appointment" parent="1" style="swimlane;html=1;horizontal=1;startSize=38;fillColor=#E3EFF3;swimlaneFillColor=#E3EFF3;strokeColor=#274866;strokeWidth=2;fontColor=#243F5D;fontSize=18;fontStyle=1;" value="&lt;b&gt;Appointment&lt;/b&gt;" vertex="1">
+          <mxGeometry height="210" width="400" x="1280" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="appointmentA" connectable="0" parent="appointment" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="- appointmentId: String&lt;br&gt;- dateTime: DateTime&lt;br&gt;- status: String" vertex="1">
+          <mxGeometry height="95" width="400" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="appointmentM" connectable="0" parent="appointment" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="+ schedule()&lt;br&gt;+ reschedule()&lt;br&gt;+ cancel()" vertex="1">
+          <mxGeometry height="77" width="400" y="133" as="geometry" />
+        </mxCell>
+        <mxCell id="record" parent="1" style="swimlane;html=1;horizontal=1;startSize=38;fillColor=#E3EFF3;swimlaneFillColor=#E3EFF3;strokeColor=#274866;strokeWidth=2;fontColor=#243F5D;fontSize=18;fontStyle=1;" value="&lt;b&gt;MedicalRecord&lt;/b&gt;" vertex="1">
+          <mxGeometry height="200" width="360" x="170" y="725" as="geometry" />
+        </mxCell>
+        <mxCell id="recordA" connectable="0" parent="record" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="- recordId: String&lt;br&gt;- history: Text&lt;br&gt;- notes: Text" vertex="1">
+          <mxGeometry height="95" width="360" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="recordM" connectable="0" parent="record" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="+ addEntry()&lt;br&gt;+ updateRecord()" vertex="1">
+          <mxGeometry height="67" width="360" y="133" as="geometry" />
+        </mxCell>
+        <mxCell id="doctor" parent="1" style="swimlane;html=1;horizontal=1;startSize=38;fillColor=#E3EFF3;swimlaneFillColor=#E3EFF3;strokeColor=#274866;strokeWidth=2;fontColor=#243F5D;fontSize=18;fontStyle=1;" value="&lt;b&gt;Doctor&lt;/b&gt;" vertex="1">
+          <mxGeometry height="200" width="350" x="560" y="725" as="geometry" />
+        </mxCell>
+        <mxCell id="doctorA" connectable="0" parent="doctor" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="- specialization: String" vertex="1">
+          <mxGeometry height="75" width="350" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="doctorM" connectable="0" parent="doctor" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="+ viewAppointments()&lt;br&gt;+ recordConsultation()" vertex="1">
+          <mxGeometry height="87" width="350" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="nurse" parent="1" style="swimlane;html=1;horizontal=1;startSize=38;fillColor=#E3EFF3;swimlaneFillColor=#E3EFF3;strokeColor=#274866;strokeWidth=2;fontColor=#243F5D;fontSize=18;fontStyle=1;" value="&lt;b&gt;Nurse&lt;/b&gt;" vertex="1">
+          <mxGeometry height="200" width="350" x="970" y="725" as="geometry" />
+        </mxCell>
+        <mxCell id="nurseA" connectable="0" parent="nurse" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="- ward: String" vertex="1">
+          <mxGeometry height="75" width="350" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="nurseM" connectable="0" parent="nurse" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="+ assistCare()&lt;br&gt;+ updateObservations()" vertex="1">
+          <mxGeometry height="87" width="350" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="receptionist" parent="1" style="swimlane;html=1;horizontal=1;startSize=38;fillColor=#E3EFF3;swimlaneFillColor=#E3EFF3;strokeColor=#274866;strokeWidth=2;fontColor=#243F5D;fontSize=18;fontStyle=1;" value="&lt;b&gt;Receptionist&lt;/b&gt;" vertex="1">
+          <mxGeometry height="200" width="390" x="1380" y="725" as="geometry" />
+        </mxCell>
+        <mxCell id="receptionistA" connectable="0" parent="receptionist" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="- deskNumber: String" vertex="1">
+          <mxGeometry height="75" width="390" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="receptionistM" connectable="0" parent="receptionist" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="+ registerPatient()&lt;br&gt;+ scheduleAppointment()" vertex="1">
+          <mxGeometry height="87" width="390" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="admission" parent="1" style="swimlane;html=1;horizontal=1;startSize=38;fillColor=#E3EFF3;swimlaneFillColor=#E3EFF3;strokeColor=#274866;strokeWidth=2;fontColor=#243F5D;fontSize=18;fontStyle=1;" value="&lt;b&gt;Admission&lt;/b&gt;" vertex="1">
+          <mxGeometry height="190" width="360" x="170" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="admissionA" connectable="0" parent="admission" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="- admissionId: String&lt;br&gt;- admissionDate: Date&lt;br&gt;- status: String" vertex="1">
+          <mxGeometry height="92" width="360" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="admissionM" connectable="0" parent="admission" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="+ admitPatient()&lt;br&gt;+ dischargePatient()" vertex="1">
+          <mxGeometry height="60" width="360" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="department" parent="1" style="swimlane;html=1;horizontal=1;startSize=38;fillColor=#E3EFF3;swimlaneFillColor=#E3EFF3;strokeColor=#274866;strokeWidth=2;fontColor=#243F5D;fontSize=18;fontStyle=1;" value="&lt;b&gt;Department&lt;/b&gt;" vertex="1">
+          <mxGeometry height="190" width="360" x="680" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="departmentA" connectable="0" parent="department" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="- departmentId: String&lt;br&gt;- name: String" vertex="1">
+          <mxGeometry height="75" width="360" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="departmentM" connectable="0" parent="department" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=10;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="+ addStaff()&lt;br&gt;+ removeStaff()" vertex="1">
+          <mxGeometry height="77" width="360" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="bill" parent="1" style="swimlane;html=1;horizontal=1;startSize=38;fillColor=#E3EFF3;swimlaneFillColor=#E3EFF3;strokeColor=#274866;strokeWidth=2;fontColor=#243F5D;fontSize=18;fontStyle=1;" value="&lt;b&gt;Bill&lt;/b&gt;" vertex="1">
+          <mxGeometry height="190" width="360" x="1200" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="billA" connectable="0" parent="bill" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="- billId: String&lt;br&gt;- amount: Decimal&lt;br&gt;- status: String" vertex="1">
+          <mxGeometry height="92" width="360" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="billM" connectable="0" parent="bill" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="+ calculateTotal()&lt;br&gt;+ markPaid()" vertex="1">
+          <mxGeometry height="60" width="360" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="payment" parent="1" style="swimlane;html=1;horizontal=1;startSize=38;fillColor=#E3EFF3;swimlaneFillColor=#E3EFF3;strokeColor=#274866;strokeWidth=2;fontColor=#243F5D;fontSize=18;fontStyle=1;" value="&lt;b&gt;Payment&lt;/b&gt;" vertex="1">
+          <mxGeometry height="190" width="360" x="1710" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="paymentA" connectable="0" parent="payment" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="- paymentId: String&lt;br&gt;- amount: Decimal&lt;br&gt;- date: Date" vertex="1">
+          <mxGeometry height="92" width="360" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="paymentM" connectable="0" parent="payment" style="text;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=9;fontSize=16;fontColor=#243F5D;strokeColor=#274866;fillColor=#FFFFFF;" value="+ process()&lt;br&gt;+ issueReceipt()" vertex="1">
+          <mxGeometry height="60" width="360" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ePatientPerson" edge="1" parent="1" source="patient" style="endArrow=block;endFill=0;endSize=15;strokeWidth=2;strokeColor=#274866;rounded=0;" target="person" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="275" />
+              <mxPoint x="1110" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eStaffPerson" edge="1" parent="1" source="staff" style="endArrow=block;endFill=0;endSize=15;strokeWidth=2;strokeColor=#274866;rounded=0;" target="person" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="275" />
+              <mxPoint x="1110" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eDoctorStaff" edge="1" parent="1" source="doctor" style="endArrow=block;endFill=0;endSize=15;strokeWidth=2;strokeColor=#274866;rounded=0;" target="staff" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="735" y="665" />
+              <mxPoint x="860" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eNurseStaff" edge="1" parent="1" source="nurse" style="endArrow=block;endFill=0;endSize=15;strokeWidth=2;strokeColor=#274866;rounded=0;" target="staff" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1145" y="665" />
+              <mxPoint x="860" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eReceptionistStaff" edge="1" parent="1" source="receptionist" style="endArrow=block;endFill=0;endSize=15;strokeWidth=2;strokeColor=#274866;rounded=0;" target="staff" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1575" y="665" />
+              <mxPoint x="860" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ePatientRecord" edge="1" parent="1" source="patient" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#078C91;fontSize=16;fontStyle=2;labelBackgroundColor=#FFFFFF;" target="record" value="owns*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ePatientAppointment" edge="1" parent="1" source="patient" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#078C91;fontSize=16;fontStyle=2;labelBackgroundColor=#FFFFFF;" target="appointment" value="books">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="595" />
+              <mxPoint x="1230" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eDoctorAppointment" edge="1" parent="1" source="doctor" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#078C91;fontSize=16;fontStyle=2;labelBackgroundColor=#FFFFFF;" target="appointment" value="assigned to">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="625" />
+              <mxPoint x="1315" y="625" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ePatientAdmission" edge="1" parent="1" source="patient" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#078C91;fontSize=16;fontStyle=2;labelBackgroundColor=#FFFFFF;" target="admission" value="has">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="375" />
+              <mxPoint x="70" y="1155" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ePatientBill" edge="1" parent="1" source="patient" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#078C91;fontSize=16;fontStyle=2;labelBackgroundColor=#FFFFFF;" target="bill" value="charged">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="125" y="590" />
+              <mxPoint x="125" y="980" />
+              <mxPoint x="1290" y="980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eDepartmentStaff" edge="1" parent="1" source="department" style="startArrow=diamond;startFill=0;startSize=16;endArrow=none;strokeWidth=2;strokeColor=#D99A13;fontSize=16;fontStyle=2;labelBackgroundColor=#FFFFFF;" target="staff" value="groups">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="1010" />
+              <mxPoint x="860" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eBillPayment" edge="1" parent="1" source="bill" style="endArrow=none;startArrow=none;strokeWidth=2;strokeColor=#078C91;fontSize=16;fontStyle=2;labelBackgroundColor=#FFFFFF;" target="payment" value="settled by">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mPr1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#078C91;" value="1" vertex="1">
+          <mxGeometry height="25" width="25" x="250" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="mPr2" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#078C91;" value="1" vertex="1">
+          <mxGeometry height="25" width="25" x="250" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="mPa1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#078C91;" value="1" vertex="1">
+          <mxGeometry height="25" width="25" x="470" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="mPaMany" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#078C91;" value="0..*" vertex="1">
+          <mxGeometry height="25" width="42" x="1235" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="mDa1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#078C91;" value="1" vertex="1">
+          <mxGeometry height="25" width="25" x="640" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="mDaMany" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#078C91;" value="0..*" vertex="1">
+          <mxGeometry height="25" width="42" x="1285" y="595" as="geometry" />
+        </mxCell>
+        <mxCell id="mPad1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#078C91;" value="1" vertex="1">
+          <mxGeometry height="25" width="25" x="125" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="mPadMany" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#078C91;" value="0..*" vertex="1">
+          <mxGeometry height="25" width="42" x="95" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="mPb1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#078C91;" value="1" vertex="1">
+          <mxGeometry height="25" width="25" x="125" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="mPbMany" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#078C91;" value="0..*" vertex="1">
+          <mxGeometry height="25" width="42" x="1170" y="955" as="geometry" />
+        </mxCell>
+        <mxCell id="mDs1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#D99A13;" value="1" vertex="1">
+          <mxGeometry height="25" width="25" x="880" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="mDsMany" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#D99A13;" value="0..*" vertex="1">
+          <mxGeometry height="25" width="42" x="935" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="mBp1" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#078C91;" value="1" vertex="1">
+          <mxGeometry height="25" width="25" x="1565" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="mBpMany" parent="1" style="text;html=1;fontSize=16;fontStyle=1;fontColor=#078C91;" value="0..*" vertex="1">
+          <mxGeometry height="25" width="42" x="1670" y="1130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
